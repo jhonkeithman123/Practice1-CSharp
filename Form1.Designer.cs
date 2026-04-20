@@ -47,6 +47,8 @@
             equals_btn = new Button();
             label1 = new Label();
             clear_btn = new Button();
+            next_form_btn = new Button();
+            prev_form_btn = new Button();
             SuspendLayout();
             // 
             // textBox1
@@ -236,6 +238,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = SystemColors.ActiveCaption;
             label1.Font = new Font("Unispace", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(189, 9);
             label1.Name = "label1";
@@ -254,11 +257,39 @@
             clear_btn.UseVisualStyleBackColor = false;
             clear_btn.Click += clear_btn_Click;
             // 
+            // next_form_btn
+            // 
+            next_form_btn.BackColor = SystemColors.ActiveCaptionText;
+            next_form_btn.Font = new Font("Unispace", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            next_form_btn.ForeColor = SystemColors.ButtonHighlight;
+            next_form_btn.Location = new Point(424, 436);
+            next_form_btn.Name = "next_form_btn";
+            next_form_btn.Size = new Size(116, 36);
+            next_form_btn.TabIndex = 19;
+            next_form_btn.Text = "Next Form";
+            next_form_btn.UseVisualStyleBackColor = false;
+            next_form_btn.Click += next_form_btn_Click;
+            // 
+            // prev_form_btn
+            // 
+            prev_form_btn.BackColor = SystemColors.ActiveCaptionText;
+            prev_form_btn.Font = new Font("Unispace", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            prev_form_btn.ForeColor = SystemColors.ButtonHighlight;
+            prev_form_btn.Location = new Point(275, 436);
+            prev_form_btn.Name = "prev_form_btn";
+            prev_form_btn.Size = new Size(116, 36);
+            prev_form_btn.TabIndex = 20;
+            prev_form_btn.Text = "Previous Form";
+            prev_form_btn.UseVisualStyleBackColor = false;
+            prev_form_btn.Click += prev_form_btn_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(601, 469);
+            ClientSize = new Size(590, 489);
+            Controls.Add(prev_form_btn);
+            Controls.Add(next_form_btn);
             Controls.Add(clear_btn);
             Controls.Add(label1);
             Controls.Add(equals_btn);
@@ -306,5 +337,7 @@
         private Button equals_btn;
         private Label label1;
         private Button clear_btn;
+        private Button next_form_btn;
+        private Button prev_form_btn;
     }
 }
