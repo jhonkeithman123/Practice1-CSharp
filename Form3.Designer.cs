@@ -104,6 +104,7 @@
             next_form_btn.TabIndex = 5;
             next_form_btn.Text = "Next Form";
             next_form_btn.UseVisualStyleBackColor = false;
+            next_form_btn.Click += next_form_btn_Click;
             // 
             // prev_form_btn
             // 

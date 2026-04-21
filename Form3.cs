@@ -53,5 +53,12 @@
                 System.IO.File.WriteAllText(sfd.FileName, platform_text.Text);
             }
         }
+
+        private void next_form_btn_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            form4.Show();
+            this.Hide();
+        }
     }
 }
